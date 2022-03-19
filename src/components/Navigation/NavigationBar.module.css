@@ -1,0 +1,73 @@
+@import url("../../theme.css");
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+.main-navigation {
+  display: inline-block;
+  margin-left: 48px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-navigation a {
+  color: var(--Dark-grayish-blue);
+  display: inline-block;
+  padding-bottom: 30px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 60ms ease-in-out;
+}
+
+.profile-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  margin-right: 36px;
+  fill: var(--Dark-grayish-blue);
+  transition: fill 60ms ease-in-out;
+}
+
+.brand-logo {
+  display: inline-block;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border 60ms ease-in-out;
+}
+
+.avatar img {
+  width: 44px;
+  height: 44px;
+}
+
+.avatar:hover {
+  border: 2px solid var(--Orange);
+  cursor: pointer;
+}
+
+.main-navigation a:hover {
+  border-bottom: 2px solid var(--Orange);
+}
+
+.cart-icon:hover {
+  fill: var(--Black);
+  cursor: pointer;
+}
