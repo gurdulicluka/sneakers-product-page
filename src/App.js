@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/Layout/Header";
+import PageContainer from "./components/Layout/PageContainer";
 
 function App() {
-  return <Header />;
+  return <PageContainer />;
 }
 
 export default App;

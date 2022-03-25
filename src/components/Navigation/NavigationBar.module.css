@@ -8,12 +8,12 @@
 }
 
 nav {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .main-navigation {
   display: inline-block;
-  margin-left: 48px;
+  margin-left: 4.8rem;
 }
 
 .main-navigation li {
@@ -24,9 +24,9 @@ nav {
 .main-navigation a {
   color: var(--Dark-grayish-blue);
   display: inline-block;
-  padding-bottom: 30px;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 60ms ease-in-out;
+  padding-bottom: 3rem;
+  border-bottom: 4px solid transparent;
+  transition: all 120ms ease-in-out;
 }
 
 .profile-navigation {
@@ -35,7 +35,7 @@ nav {
 }
 
 .cart-icon {
-  margin-right: 36px;
+  margin-right: 3.6rem;
   fill: var(--Dark-grayish-blue);
   transition: fill 60ms ease-in-out;
 }
@@ -64,7 +64,8 @@ nav {
 }
 
 .main-navigation a:hover {
-  border-bottom: 2px solid var(--Orange);
+  border-color: var(--Orange);
+  color: var(--Black);
 }
 
 .cart-icon:hover {

@@ -1,0 +1,6 @@
+.product-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 50px;
+}

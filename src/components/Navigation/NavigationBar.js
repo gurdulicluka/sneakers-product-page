@@ -9,33 +9,33 @@ const NavigationBar = (props) => {
       <nav>
         <div className={classes["brand-logo"]}>
           <h1>
-            <a href="#">
+            <a href="Home">
               <BrandLogo />
             </a>
           </h1>
         </div>
         <ul className={classes["main-navigation"]}>
           <li>
-            <a href="Collections">Collections</a>
+            <a href="">Collections</a>
           </li>
           <li>
-            <a href="Men">Men</a>
+            <a href="">Men</a>
           </li>
           <li>
-            <a href="Women">Women</a>
+            <a href="">Women</a>
           </li>
           <li>
-            <a href="About">About</a>
+            <a href="">About</a>
           </li>
           <li>
-            <a href="Contact">Contact</a>
+            <a href="">Contact</a>
           </li>
         </ul>
       </nav>
       <div className={classes["profile-navigation"]}>
         <CartIcon className={classes["cart-icon"]} />
         <div className={classes.avatar}>
-          <img src={AvatarImage} alt="profile image" />
+          <img src={AvatarImage} alt="avatar" />
         </div>
       </div>
     </div>

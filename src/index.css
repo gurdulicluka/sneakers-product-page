@@ -7,13 +7,25 @@
   margin: 0;
   padding: 0;
   background-color: transparent;
-  font-size: 100%;
 }
 
 html {
   font-family: "Noto Sans JP", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 a {
   color: black;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
