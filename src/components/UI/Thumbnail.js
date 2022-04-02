@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Thumbnail.module.css";
 
 const Thumbnail = (props) => {
-  console.log(props.isActive);
   return (
     <div
       onClick={props.onClick}
