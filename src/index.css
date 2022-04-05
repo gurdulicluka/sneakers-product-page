@@ -9,7 +9,8 @@
   background-color: transparent;
 }
 
-html {
+html,
+button {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 62.5%;
 }

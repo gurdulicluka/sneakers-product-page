@@ -6,7 +6,7 @@
 }
 
 .big-image:hover {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 @keyframes image-appear {

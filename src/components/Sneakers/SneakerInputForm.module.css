@@ -1,0 +1,15 @@
+.btn-txt {
+  margin-left: 1.6rem;
+}
+
+svg {
+  fill: white;
+}
+
+.input-amount-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 18px;
+}
