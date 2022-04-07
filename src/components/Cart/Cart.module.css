@@ -1,0 +1,26 @@
+@import url("../../stylesheets/theme.css");
+
+.cart {
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--White);
+  border-radius: 8px;
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  z-index: 10;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 4px 18px 0px;
+}
+
+.cart-title {
+  font-size: 2rem;
+  padding: 1.8rem 1.6rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.cart-empty-txt {
+  font-size: 1.4rem;
+  color: var(--Dark-grayish-blue);
+  text-align: center;
+  padding: 7.5rem 0px;
+}

@@ -1,0 +1,38 @@
+.profile-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.cart-btn {
+  margin-right: 3.6rem;
+  border: none;
+}
+
+.cart-icon {
+  fill: var(--Dark-grayish-blue);
+  transition: fill 60ms ease-in-out;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border 60ms ease-in-out;
+}
+
+.avatar img {
+  width: 44px;
+  height: 44px;
+}
+
+.avatar:hover {
+  border: 2px solid var(--Orange);
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  fill: var(--Black);
+  cursor: pointer;
+}

@@ -1,4 +1,4 @@
-@import url("../../theme.css");
+@import url("../../stylesheets/theme.css");
 
 .btn {
   width: 100%;
@@ -12,4 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 100ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--Light-orange);
 }

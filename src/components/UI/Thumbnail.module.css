@@ -1,4 +1,4 @@
-@import url(../../theme.css);
+@import url("../../stylesheets/theme.css");
 
 .thumbnail {
   border-radius: 10px;

@@ -1,4 +1,4 @@
-@import url("../../theme.css");
+@import url("../../stylesheets/theme.css");
 
 .input-btn {
   padding: 1.8rem;
@@ -24,6 +24,10 @@
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
+}
+
+.input-btn:hover {
+  cursor: pointer;
 }
 
 /* Hide default number input arrows */

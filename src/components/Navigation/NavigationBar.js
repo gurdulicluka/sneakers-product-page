@@ -1,15 +1,22 @@
 import classes from "./NavigationBar.module.css";
-import { ReactComponent as CartIcon } from "../../assets/icon-cart.svg";
 import { ReactComponent as BrandLogo } from "../../assets/logo.svg";
-import AvatarImage from "../../assets/image-avatar.png";
+import UserNavigation from "./UserNavigation";
+import Cart from "../Cart/Cart";
+import { useState } from "react";
 
 const NavigationBar = (props) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const showCartHandler = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <div className={classes["navigation-wrapper"]}>
       <nav>
         <div className={classes["brand-logo"]}>
           <h1>
-            <a href="Home">
+            <a href="#">
               <BrandLogo />
             </a>
           </h1>
@@ -32,12 +39,8 @@ const NavigationBar = (props) => {
           </li>
         </ul>
       </nav>
-      <div className={classes["profile-navigation"]}>
-        <CartIcon className={classes["cart-icon"]} />
-        <div className={classes.avatar}>
-          <img src={AvatarImage} alt="avatar" />
-        </div>
-      </div>
+      <UserNavigation onClick={showCartHandler} />
+      {isVisible && <Cart />}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import Header from "./Header";
-import ProductView from "./ProductView";
+import ProductView from "../Pages/ProductView";
 import classes from "./PageContainer.module.css";
 
 const PageContainer = () => {

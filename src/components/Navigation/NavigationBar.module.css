@@ -1,14 +1,15 @@
-@import url("../../theme.css");
+@import url("../../stylesheets/theme.css");
 
 .navigation-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
+  position: relative;
 }
 
 nav {
-  margin-top: 3rem;
+  margin-top: 3.8rem;
 }
 
 .main-navigation {
@@ -24,51 +25,16 @@ nav {
 .main-navigation a {
   color: var(--Dark-grayish-blue);
   display: inline-block;
-  padding-bottom: 3rem;
+  padding-bottom: 3.2rem;
   border-bottom: 4px solid transparent;
   transition: all 120ms ease-in-out;
-}
-
-.profile-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.cart-icon {
-  margin-right: 3.6rem;
-  fill: var(--Dark-grayish-blue);
-  transition: fill 60ms ease-in-out;
 }
 
 .brand-logo {
   display: inline-block;
 }
 
-.avatar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  transition: border 60ms ease-in-out;
-}
-
-.avatar img {
-  width: 44px;
-  height: 44px;
-}
-
-.avatar:hover {
-  border: 2px solid var(--Orange);
-  cursor: pointer;
-}
-
 .main-navigation a:hover {
   border-color: var(--Orange);
   color: var(--Black);
-}
-
-.cart-icon:hover {
-  fill: var(--Black);
-  cursor: pointer;
 }
