@@ -1,29 +1,28 @@
-import { useState } from "react";
-import Button from "../UI/Button";
-import classes from "./SneakerInputForm.module.css";
+import { useState, useRef, useContext } from "react";
 import { ReactComponent as CartIcon } from "../../assets/icon-cart.svg";
+import classes from "./SneakerInputForm.module.css";
+import Button from "../UI/Button";
 import Input from "../UI/Input";
+import CartContext from "../../store/cart-context";
 
 const SneakerInputForm = (props) => {
-  const [amount, setAmount] = useState(0);
-
-  const decrementAmount = () => {
-    if (amount > 0) {
-      setAmount(amount - 1);
-    }
-  };
-
-  const incrementAmount = () => {
-    setAmount(amount + 1);
-  };
-
-  const handleChange = (e) => {
-    setAmount(e);
+  const amountInputRef = useRef();
+  const cartCtx = useContext(CartContext);
+  const addToCartHandler = (amount) => {
+    cartCtx.addItem({
+      id: props.sneaker.id,
+      name: props.sneaker.name,
+      amount: amount,
+      price: props.price,
+    });
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setAmount(0);
+    const enteredAmount = amountInputRef.current.value;
+    const enteredAmountNumber = +enteredAmount;
+    addToCartHandler(enteredAmountNumber);
+    amountInputRef.current.value = 1;
   };
 
   return (
@@ -33,10 +32,15 @@ const SneakerInputForm = (props) => {
       onSubmit={onSubmit}
     >
       <Input
-        amount={amount}
-        decrease={decrementAmount}
-        increase={incrementAmount}
-        handleChange={handleChange}
+        ref={amountInputRef}
+        input={{
+          id: "amount",
+          type: "number",
+          min: "1",
+          max: "10",
+          step: "1",
+          defaultValue: 1,
+        }}
       />
       <Button>
         <CartIcon />
