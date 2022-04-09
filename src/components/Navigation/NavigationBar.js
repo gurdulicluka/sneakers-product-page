@@ -1,16 +1,8 @@
-import classes from "./NavigationBar.module.css";
 import { ReactComponent as BrandLogo } from "../../assets/logo.svg";
 import UserNavigation from "./UserNavigation";
-import Cart from "../Cart/Cart";
-import { useState } from "react";
+import classes from "./NavigationBar.module.css";
 
 const NavigationBar = (props) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const showCartHandler = () => {
-    setIsVisible(!isVisible);
-  };
-
   return (
     <div className={classes["navigation-wrapper"]}>
       <nav>
@@ -39,8 +31,7 @@ const NavigationBar = (props) => {
           </li>
         </ul>
       </nav>
-      <UserNavigation onClick={showCartHandler} />
-      {isVisible && <Cart />}
+      <UserNavigation />
     </div>
   );
 };

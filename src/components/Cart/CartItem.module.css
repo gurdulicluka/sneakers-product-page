@@ -1,0 +1,48 @@
+@import url("../../stylesheets/theme.css");
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.cart-item-image {
+  width: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cart-item-name {
+  color: var(--Black);
+}
+
+.cart-item-price {
+  color: var(--Grayish-blue);
+}
+
+.cart-item-total-price {
+  margin-left: 1.6rem;
+  color: var(--Black);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cart-remove-item-btn {
+  border: none;
+}
+
+.delete-icon {
+  fill: var(--Grayish-blue);
+  transition: fill 80ms ease-in-out;
+}
+
+/* effects */
+
+.cart-remove-item-btn:hover {
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  fill: var(--Black);
+}

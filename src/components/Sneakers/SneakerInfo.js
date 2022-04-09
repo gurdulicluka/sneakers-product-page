@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import classes from "./SneakerInfo.module.css";
 import data from "../../data";
 import SneakerDescription from "./SneakerDescription";

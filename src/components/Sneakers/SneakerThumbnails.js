@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import classes from "./SneakerThumbnails.module.css";
 import Thumbnail from "../UI/Thumbnail";
 import data from "../../data.js";

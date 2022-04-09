@@ -1,14 +1,7 @@
-import Header from "./Header";
-import ProductView from "../Pages/ProductView";
 import classes from "./PageContainer.module.css";
 
-const PageContainer = () => {
-  return (
-    <div className={classes.wrapper}>
-      <Header />
-      <ProductView />
-    </div>
-  );
+const PageContainer = (props) => {
+  return <div id={classes.container}>{props.children}</div>;
 };
 
 export default PageContainer;

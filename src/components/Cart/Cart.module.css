@@ -12,6 +12,14 @@
   box-shadow: rgba(99, 99, 99, 0.3) 0px 4px 18px 0px;
 }
 
+.cart-all-items {
+  padding-bottom: 10px;
+}
+
+.cart-items-wrapper {
+  padding: 2rem 2.2rem 3rem 2.2rem;
+}
+
 .cart-title {
   font-size: 2rem;
   padding: 1.8rem 1.6rem;

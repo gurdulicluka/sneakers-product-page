@@ -9,10 +9,16 @@
   background-color: transparent;
 }
 
-html,
-button {
+html {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 62.5%;
+  overflow-y: scroll;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
 }
 
 body {
@@ -32,6 +38,10 @@ p {
 
 a {
   color: black;
+}
+
+svg {
+  display: block;
 }
 
 img {

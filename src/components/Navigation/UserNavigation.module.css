@@ -4,7 +4,7 @@
 }
 
 .cart-btn {
-  margin-right: 3.6rem;
+  margin-right: 2.8rem;
   border: none;
 }
 
@@ -27,12 +27,17 @@
   height: 44px;
 }
 
+/* effects */
+
 .avatar:hover {
   border: 2px solid var(--Orange);
   cursor: pointer;
 }
 
+.cart-btn:hover {
+  cursor: pointer;
+}
+
 .cart-icon:hover {
   fill: var(--Black);
-  cursor: pointer;
 }

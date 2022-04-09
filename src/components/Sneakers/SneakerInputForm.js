@@ -1,9 +1,9 @@
-import { useState, useRef, useContext } from "react";
+import { useRef, useContext } from "react";
 import { ReactComponent as CartIcon } from "../../assets/icon-cart.svg";
-import classes from "./SneakerInputForm.module.css";
 import Button from "../UI/Button";
 import Input from "../UI/Input";
 import CartContext from "../../store/cart-context";
+import classes from "./SneakerInputForm.module.css";
 
 const SneakerInputForm = (props) => {
   const amountInputRef = useRef();
