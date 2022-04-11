@@ -11,7 +11,7 @@ const CartItem = (props) => {
     .thumbnail;
 
   return (
-    <div className={classes["cart-item"]}>
+    <li className={classes["cart-item"]}>
       <div className={classes["cart-item-image"]}>
         <img src={sneakerImage} alt="sneakers" />
       </div>
@@ -30,7 +30,7 @@ const CartItem = (props) => {
       >
         <DeleteIcon className={classes["delete-icon"]} />
       </button>
-    </div>
+    </li>
   );
 };
 

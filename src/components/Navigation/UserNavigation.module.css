@@ -1,11 +1,15 @@
+@import url("../../stylesheets/theme.css");
+
 .profile-navigation {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .cart-btn {
   margin-right: 2.8rem;
   border: none;
+  position: relative;
 }
 
 .cart-icon {
@@ -14,9 +18,6 @@
 }
 
 .avatar {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   border: 2px solid transparent;
   transition: border 60ms ease-in-out;
@@ -40,4 +41,18 @@
 
 .cart-icon:hover {
   fill: var(--Black);
+}
+
+.badge::after {
+  content: attr(value);
+  position: absolute;
+  display: block;
+  color: var(--White);
+  background: var(--Orange);
+  font-size: 1.2rem;
+  border-radius: 9999px;
+  padding: 1px 8px;
+  top: -9px;
+  left: 11px;
+  pointer-events: none;
 }

@@ -1,12 +1,11 @@
 @import url("../../stylesheets/theme.css");
 
 .cart {
-  width: 100%;
-  max-width: 360px;
+  width: 375px;
   background-color: var(--White);
   border-radius: 8px;
   position: absolute;
-  top: 8rem;
+  top: 58px;
   right: 0;
   z-index: 10;
   box-shadow: rgba(99, 99, 99, 0.3) 0px 4px 18px 0px;
@@ -30,5 +29,5 @@
   font-size: 1.4rem;
   color: var(--Dark-grayish-blue);
   text-align: center;
-  padding: 7.5rem 0px;
+  padding: 1rem 0px;
 }

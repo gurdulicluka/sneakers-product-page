@@ -8,18 +8,16 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const hasItems = cartCtx.items.length > 0;
 
+  const cartIsEmptyText = (
+    <p className={classes["cart-empty-txt"]}>Your cart is empty.</p>
+  );
+
   const cartItems = (
     <ul className={classes["cart-all-items"]}>
       {cartCtx.items.map((item) => (
-        <li key={item.id}>
-          <CartItem {...item} />
-        </li>
+        <CartItem key={item.id} {...item} />
       ))}
     </ul>
-  );
-
-  const cartIsEmptyText = (
-    <p className={classes["cart-empty-txt"]}>Your cart is empty.</p>
   );
 
   return (
