@@ -5,20 +5,16 @@ import SneakerDescription from "./SneakerDescription";
 import SneakerPriceTag from "./SneakerPriceTag";
 import SneakerInputForm from "./SneakerInputForm";
 
-const sneaker = data.find((sneaker) => sneaker.id === 1);
-
 const SneakerInfo = (props) => {
-  const [product, setProduct] = useState(sneaker);
-
-  const [price, setPrice] = useState(product.price);
+  const { price, discountPercent } = props.sneakers;
   const [isDiscounted, setIsDiscounted] = useState(false);
+  const [priceAmount, setPriceAmount] = useState(price);
 
   const discountHandler = () => {
-    if (product.discountPercent > 0) {
+    if (discountPercent > 0) {
       setIsDiscounted(true);
-      const newPrice =
-        product.price - (product.price / 100) * product.discountPercent;
-      setPrice(newPrice);
+      const newPrice = price - (price / 100) * discountPercent;
+      setPriceAmount(newPrice);
       return;
     }
     return;
@@ -30,13 +26,13 @@ const SneakerInfo = (props) => {
 
   return (
     <section className={classes["sneaker-info"]}>
-      <SneakerDescription sneaker={product} />
+      <SneakerDescription sneakers={props.sneakers} />
       <SneakerPriceTag
-        sneaker={product}
-        price={price}
+        sneakers={props.sneakers}
+        price={priceAmount}
         isDiscounted={isDiscounted}
       />
-      <SneakerInputForm sneaker={product} price={price} />
+      <SneakerInputForm sneakers={props.sneakers} price={priceAmount} />
     </section>
   );
 };

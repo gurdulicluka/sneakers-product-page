@@ -10,8 +10,8 @@ const SneakerInputForm = (props) => {
   const cartCtx = useContext(CartContext);
   const addToCartHandler = (amount) => {
     cartCtx.addItem({
-      id: props.sneaker.id,
-      name: props.sneaker.name,
+      id: props.sneakers.id,
+      name: props.sneakers.name,
       amount: amount,
       price: props.price,
     });

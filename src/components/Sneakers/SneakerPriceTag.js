@@ -11,9 +11,9 @@ const SneakerPriceTag = (props) => {
         {`$${props.price.toFixed(2)}`}
         <span
           className={classes["discount-amount"]}
-        >{`${props.sneaker.discountPercent}%`}</span>
+        >{`${props.sneakers.discountPercent}%`}</span>
       </p>
-      <p className={classes["old-price"]}>{`$${props.sneaker.price.toFixed(
+      <p className={classes["old-price"]}>{`$${props.sneakers.price.toFixed(
         2
       )}`}</p>
     </>

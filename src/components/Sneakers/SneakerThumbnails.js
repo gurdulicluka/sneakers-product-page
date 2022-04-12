@@ -1,7 +1,6 @@
 import { useState } from "react";
 import classes from "./SneakerThumbnails.module.css";
 import Thumbnail from "../UI/Thumbnail";
-import data from "../../data.js";
 
 const SneakerThumbnails = (props) => {
   const [isSelected, setIsSelected] = useState("img1");
@@ -10,8 +9,8 @@ const SneakerThumbnails = (props) => {
     setIsSelected(id);
   };
 
-  const sneakerThumbnailImages = data[0].images.map((item) => {
-    const highlight = isSelected === item.id ? "selected" : "";
+  const sneakerThumbnailImages = props.sneakers.images.map((item) => {
+    const highlight = isSelected === item.id;
 
     return (
       <Thumbnail

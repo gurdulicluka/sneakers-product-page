@@ -5,7 +5,9 @@ const Thumbnail = (props) => {
   return (
     <div
       onClick={props.onClick}
-      className={`${classes.thumbnail} ${classes[props.isActive]}`}
+      className={`${classes.thumbnail} ${
+        props.isActive ? classes["selected"] : ""
+      }`}
     >
       {props.children}
     </div>
