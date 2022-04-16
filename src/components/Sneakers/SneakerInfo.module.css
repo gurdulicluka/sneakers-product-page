@@ -1,6 +1,12 @@
 .sneaker-info {
   flex: 1 1 0%;
-  padding: 0px 42px;
+  padding: 0px 32px;
   max-width: 550px;
   margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .sneaker-info {
+    padding: 0;
+  }
 }

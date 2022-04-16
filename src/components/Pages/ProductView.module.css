@@ -1,6 +1,15 @@
 .product-view {
   display: flex;
   justify-content: space-between;
+  width: 90vw;
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 70px 50px;
   gap: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .product-view {
+    padding: 70px 0px;
+  }
 }

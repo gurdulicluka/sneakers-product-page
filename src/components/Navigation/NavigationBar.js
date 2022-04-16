@@ -1,18 +1,12 @@
-import { ReactComponent as BrandLogo } from "../../assets/logo.svg";
 import UserNavigation from "./UserNavigation";
 import classes from "./NavigationBar.module.css";
+import BrandLogo from "../UI/BrandLogo";
 
 const NavigationBar = (props) => {
   return (
     <div className={classes["navigation-wrapper"]}>
       <nav>
-        <div className={classes["brand-logo"]}>
-          <h1>
-            <a href="#">
-              <BrandLogo />
-            </a>
-          </h1>
-        </div>
+        <BrandLogo />
         <ul className={classes["main-navigation"]}>
           <li>
             <a href="#">Collections</a>

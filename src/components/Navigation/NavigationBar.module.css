@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
 }
 
 nav {
@@ -29,11 +28,13 @@ nav {
   transition: all 120ms ease-in-out;
 }
 
-.brand-logo {
-  display: inline-block;
-}
-
 .main-navigation a:hover {
   border-color: var(--Orange);
   color: var(--Black);
+}
+
+@media (max-width: 1024px) {
+  .main-navigation {
+    margin-left: 2.8rem;
+  }
 }

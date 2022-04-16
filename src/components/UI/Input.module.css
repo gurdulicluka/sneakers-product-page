@@ -20,7 +20,7 @@
 .input-amount input {
   border: none;
   outline: none;
-  width: 3.5ch;
+  width: 3ch;
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
@@ -39,4 +39,10 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+@media (max-width: 1024px) {
+  .input-amount input {
+    width: 2ch;
+  }
 }
