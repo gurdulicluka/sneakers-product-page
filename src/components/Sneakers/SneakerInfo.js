@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import classes from "./SneakerInfo.module.css";
-import data from "../../data";
 import SneakerDescription from "./SneakerDescription";
 import SneakerPriceTag from "./SneakerPriceTag";
 import SneakerInputForm from "./SneakerInputForm";

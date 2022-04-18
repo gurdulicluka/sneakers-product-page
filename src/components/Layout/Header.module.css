@@ -1,4 +1,4 @@
-header {
+.page-header {
   border-bottom: 1px solid lightgray;
   background-color: hsl(0, 0%, 100%);
   width: 90vw;
@@ -7,7 +7,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  header {
+  .page-header {
     border-bottom-color: transparent;
     width: 95vw;
   }

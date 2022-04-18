@@ -1,7 +1,7 @@
-import BrandLogo from "../UI/BrandLogo";
+import BrandLogo from "../../UI/BrandLogo";
 import { useState } from "react";
 import classes from "./MobileMenu.module.css";
-import { ReactComponent as MenuButtonIcon } from "../../assets/icon-menu.svg";
+import { ReactComponent as MenuButtonIcon } from "../../../assets/icon-menu.svg";
 import MobileMenuSlider from "./MobileMenuSlider";
 
 const MobileMenu = () => {

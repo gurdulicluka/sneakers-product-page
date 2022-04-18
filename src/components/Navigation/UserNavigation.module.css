@@ -27,21 +27,6 @@
   width: clamp(36px, 3vw, 44px);
 }
 
-/* effects */
-
-.avatar:hover {
-  border: 2px solid var(--Orange);
-  cursor: pointer;
-}
-
-.cart-btn:hover {
-  cursor: pointer;
-}
-
-.cart-icon:hover {
-  fill: var(--Black);
-}
-
 .badge::after {
   content: attr(value);
   position: absolute;
@@ -59,5 +44,22 @@
 @media (max-width: 768px) {
   .cart-btn {
     margin-right: 1.6rem;
+  }
+}
+
+/* effects */
+
+@media (hover: hover) {
+  .avatar:hover {
+    border: 2px solid var(--Orange);
+    cursor: pointer;
+  }
+
+  .cart-btn:hover {
+    cursor: pointer;
+  }
+
+  .cart-icon:hover {
+    fill: var(--Black);
   }
 }

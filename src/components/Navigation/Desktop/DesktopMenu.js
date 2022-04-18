@@ -1,4 +1,4 @@
-import BrandLogo from "../UI/BrandLogo";
+import BrandLogo from "../../../components/UI/BrandLogo";
 import classes from "./DesktopMenu.module.css";
 
 const DesktopMenu = () => {

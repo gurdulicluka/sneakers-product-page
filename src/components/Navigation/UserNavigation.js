@@ -28,7 +28,7 @@ const UserNavigation = (props) => {
         <CartIcon className={classes["cart-icon"]} />
       </button>
       <button className={classes.avatar}>
-        <img src={AvatarImage} alt="profile image" />
+        <img src={AvatarImage} alt="avatar" />
       </button>
       {isVisible && <Cart />}
     </div>

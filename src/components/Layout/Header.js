@@ -2,9 +2,9 @@ import React from "react";
 import classes from "./Header.module.css";
 import NavigationBar from "../Navigation/NavigationBar";
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <header>
+    <header className={classes["page-header"]}>
       <NavigationBar />
     </header>
   );

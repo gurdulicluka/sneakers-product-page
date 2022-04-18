@@ -35,7 +35,7 @@ const cartReducer = (state, action) => {
       totalPrice: updatedTotalPrice,
     };
   } else if (action.type === "REMOVE") {
-    const updatedItems = state.items.filter((item) => item.id != action.id);
+    const updatedItems = state.items.filter((item) => item.id !== action.id);
     let updatedTotalPrice;
     if (updatedItems.length === 0) {
       updatedTotalPrice = 0;
