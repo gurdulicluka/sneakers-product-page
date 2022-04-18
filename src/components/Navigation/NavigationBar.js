@@ -1,30 +1,15 @@
+import { useMediaQuery } from "react-responsive";
 import UserNavigation from "./UserNavigation";
+import DesktopMenu from "./DesktopMenu";
 import classes from "./NavigationBar.module.css";
-import BrandLogo from "../UI/BrandLogo";
+import MobileMenu from "./MobileMenu";
 
 const NavigationBar = (props) => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <div className={classes["navigation-wrapper"]}>
-      <nav>
-        <BrandLogo />
-        <ul className={classes["main-navigation"]}>
-          <li>
-            <a href="#">Collections</a>
-          </li>
-          <li>
-            <a href="#">Men</a>
-          </li>
-          <li>
-            <a href="#">Women</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <nav>{isTabletOrMobile ? <MobileMenu /> : <DesktopMenu />}</nav>
       <UserNavigation />
     </div>
   );

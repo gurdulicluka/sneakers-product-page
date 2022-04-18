@@ -19,6 +19,7 @@
 
 .input-amount input {
   border: none;
+  pointer-events: none;
   outline: none;
   width: 3ch;
   font-size: 1.8rem;
@@ -44,5 +45,11 @@ input[type="number"] {
 @media (max-width: 1024px) {
   .input-amount input {
     width: 2ch;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-amount {
+    width: 100%;
   }
 }

@@ -2,12 +2,12 @@
 
 .sneaker-price {
   width: fit-content;
+  margin-top: 1.6rem;
 }
 
 .price {
   font-size: 2.2rem;
   font-weight: 700;
-  margin-top: 1.6rem;
 }
 
 .discount-amount {
@@ -28,4 +28,22 @@
   font-size: 1.6rem;
   color: var(--Grayish-blue);
   margin-top: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .sneaker-price {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.6rem;
+  }
+
+  .old-price {
+    font-size: 1.8rem;
+  }
+
+  .price {
+    font-size: 2.6rem;
+  }
 }

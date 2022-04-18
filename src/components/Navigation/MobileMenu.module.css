@@ -1,0 +1,17 @@
+@import url("../../stylesheets/theme.css");
+
+.mobile-header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button {
+  border: none;
+  padding: 10px;
+  margin-right: 1.2rem;
+}
+
+.menu-button-icon {
+  fill: var(--Black);
+}

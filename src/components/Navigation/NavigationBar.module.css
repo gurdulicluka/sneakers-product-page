@@ -10,31 +10,12 @@ nav {
   margin-top: 3.8rem;
 }
 
-.main-navigation {
-  display: inline-block;
-  margin-left: 4.8rem;
-}
+@media (max-width: 768px) {
+  nav {
+    margin-top: 0px;
+  }
 
-.main-navigation li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-
-.main-navigation a {
-  color: var(--Dark-grayish-blue);
-  display: inline-block;
-  padding-bottom: 3.2rem;
-  border-bottom: 4px solid transparent;
-  transition: all 120ms ease-in-out;
-}
-
-.main-navigation a:hover {
-  border-color: var(--Orange);
-  color: var(--Black);
-}
-
-@media (max-width: 1024px) {
-  .main-navigation {
-    margin-left: 2.8rem;
+  .navigation-wrapper {
+    padding: 1rem 0px;
   }
 }

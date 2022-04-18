@@ -8,6 +8,13 @@
   gap: 5rem;
 }
 
+@media (max-width: 768px) {
+  .product-view {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .product-view {
     padding: 70px 0px;

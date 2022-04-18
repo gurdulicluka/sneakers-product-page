@@ -13,3 +13,9 @@ svg {
   margin-top: 20px;
   gap: 18px;
 }
+
+@media (max-width: 768px) {
+  .input-amount-form {
+    flex-direction: column;
+  }
+}
