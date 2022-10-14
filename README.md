@@ -22,6 +22,6 @@ I have tried to follow the classic folder structure and architecture for a React
 I don't consider this little project completed yet, because I've learned a lot more about cleaner code design and React.js in general since then. I would like to come back one day and fix some functionalities and perhaps add a full product list page and expand the website.<br>
 Nonetheless, I am still proud of this little nugget of a website I built because I fell in love with React.js doing it and got introduced to many other new technologies/tools.
 
-## Screenshot
+## Preview
 
 ![Sneakers](https://user-images.githubusercontent.com/86915331/195844386-ca3e9de0-5fd8-4f3c-bfb1-34540550846e.png)
